@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>produit</title>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="produit.php" method="post">
+        <table border="1">
+            <tr>
+                <td>Designation</td>
+                <td><input type="text" name="designation"></td>
+            </tr>
+              <tr>
+               <td><label for="stock">Stock</label></td>
+            <td><input type="text" name="stock" id="stock"></td>
+             </tr>
+
+            <tr>
+               <td><label for="prix">Prix</label></td>
+            <td><input type="text" name="prix" id="prix"></td>
+             </tr>
+
+             <tr>
+                 <td>Photo</td>
+                 <td><input type="file" name="photo"></td>
+             </tr>
+
+             <tr>
+                <td>disponible</td>
+                <td>
+                    <input type="radio" name="disponible" value="oui" id="oui" >oui
+        <input type="radio" name="disponible" value="non" id="non" >non
+                </td>
+                 
+             </tr>
+              <tr>
+                <td>promotion</td>
+                <td>
+                    <input type="radio" name="promotion" value="oui" id="oui" >oui
+        <input type="radio" name="disponible" value="non" id="non" >non
+                </td>
+                 
+             </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="enregistrer">
+                <input type="reset"></td>
+            </tr>
+             </table>
+    </form>
+</body>
+</html>
